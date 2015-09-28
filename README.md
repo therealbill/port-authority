@@ -189,3 +189,4 @@ go in this space as well.
  * Perhaps NewRelic support as well?
  * Add in go-metrics stats
  * Add in circuitbreaker for talking to Redis.
+ * Add Dockerfile

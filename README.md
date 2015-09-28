@@ -190,3 +190,5 @@ go in this space as well.
  * Add in go-metrics stats
  * Add in circuitbreaker for talking to Redis.
  * Add Dockerfile
+ * travis-ci.org config - including release using `ghr`
+ * ... and write some tests for it to use

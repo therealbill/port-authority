@@ -230,13 +230,12 @@ func main() {
 			Name:   "name,n",
 			Usage:  "Name of the running server",
 			EnvVar: "PA_NAME",
-			Value:  "apiserver-01",
 		},
 		cli.StringFlag{
-			Name:   "envirnmemt,e",
+			Name:   "environment,e",
 			Usage:  "Name of the airbrake environment for this server",
 			EnvVar: "PA_ENV",
-			Value:  "apiserver-01",
+			Value:  "development",
 		},
 	}
 	app.Action = serve

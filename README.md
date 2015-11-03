@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/therealbill/port-authority.png?label=ready&title=Ready)](https://waffle.io/therealbill/port-authority)
 # PORT-AUTHORITY
 
 Port-Authority (PA) is a microservice which does one thing: keep and manage a

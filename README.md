@@ -142,14 +142,14 @@ Once it has it it will then add it to a sorted set named
 to ports) and `port2i` to map ports to IDs). As such, once you've
 reserved one port all four keys will be created.
 
-When we the last assigned port/service, Redis will delete the now empty
-hashes and `assigned_ports` keys. In this we the key count will be very
+When we remove the last assigned port/service, Redis will delete the now empty
+hashes and `assigned_ports` keys. As a result the key count will be very
 small. 
 
 ## Memory Consumption
 
-Depending on how large you rport range is, this shuold be quite memory
-efficient as the two sets are iteger sets, which Redis optimizes for. To
+Depending on how large your port range is this should be quite memory
+efficient as the two sets are integer sets, which Redis optimizes for. To
 get the maximum benefit the value of `set-max-intset-entries` in Redis'
 configuration should be set to at least the number of ports you will
 have PA manage. Eventually this will be configurable in PA as well for
